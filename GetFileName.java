@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class GetFileName {
 	
 	
-	static String fileName(Scanner input, String prompt, String defaultFilename) {
+	public static String fileName(Scanner input, String prompt, String defaultFilename) {
 		String filename = "";
 		while (true) {
 			System.out.printf(prompt + " [%s]: ", defaultFilename);
