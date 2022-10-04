@@ -1,6 +1,6 @@
 /*
  * Name: Julie Renaud 	
- * Date: 9/27/22
+ * Date: 10/2/22
  * Course Number: CSC-220-D01
  * Course Name: Data Structures and Algorithms 
  * Problem Number:  Matrix Determinats - Part 2
