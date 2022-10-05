@@ -12,10 +12,10 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 
-public class Determinates {
+public class Determinants {
 	
 	
-	// Calculates Determinates in Matrix 
+	// Calculates Determinants in Matrix 
 	public static double det(Matrix a) {
 			int size = a.getSize();
 			double temp = 1.0;
@@ -62,5 +62,4 @@ public class Determinates {
 
 			return a;
 		}
-
 }

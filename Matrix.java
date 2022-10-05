@@ -1,5 +1,4 @@
-/*
- * Name: Julie Renaud 	
+* Name: Julie Renaud 	
  * Date: 10/2/22
  * Course Number: CSC-220-D01
  * Course Name: Data Structures and Algorithms 
@@ -84,9 +83,3 @@ public class Matrix {
 	}
 	
 }
-	
-	
-	
-	
-	
-

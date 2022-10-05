@@ -1,5 +1,4 @@
-/*
- * Name: Julie Renaud 	
+* Name: Julie Renaud 	
  * Date: 10/2/22
  * Course Number: CSC-220-D01
  * Course Name: Data Structures and Algorithms 
@@ -7,11 +6,10 @@
  * Email: jmrenaud2001@student.stcc.edu 
  */
 
-import java.io.File;
-import java.io.FileNotFoundException;
+
 import java.util.Scanner;
 
-public class DeterminatesDriver {
+public class DeterminantsDriver {
 	private final static String TITLE = "Determinants Part 2";
 	private final static String CONTINUE_PROMPT = "Do this again? [y/N] ";
 
@@ -31,10 +29,10 @@ public class DeterminatesDriver {
 	private static void process(Scanner input, String args[]) throws Exception {
 
 		var filename = GetFileName.fileName(input, "Enter determinant filename", "sampledet.txt");
-		var a = Determinates.getDeterminant(filename);
+		var a = Determinants.getDeterminant(filename);
 		System.out.printf("Matrix Elements = \n");
 		a.displayMatrix();
-		System.out.printf("The determinate = %10.3f\n", Determinates.det(a));
+		System.out.printf("The determinate = %10.3f\n", Determinants.det(a));
 		input.nextLine(); // Clear the Keyboard
 
 	}
