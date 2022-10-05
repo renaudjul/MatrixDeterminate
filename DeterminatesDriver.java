@@ -18,6 +18,9 @@ public class DeterminatesDriver {
 	// **********************************************
 	// Put as many methods you need here
 
+	
+	
+	// Calculates Determinates in Matrix 
 	private static double det(Matrix a) {
 		int size = a.getSize();
 		double temp = 1.0;
@@ -36,52 +39,6 @@ public class DeterminatesDriver {
 					break;
 			}
 
-			
-			
-//			double value = 0;
-//			double value2 = 0;
-//
-//			temp *= coeff = a.getElement(i, i);
-//			for (j = i; j < size; j++)
-//				value = a.getElement(i, j) / coeff;
-//			a.setElement(i, j, value);
-//			for (l = i + 1; l < size; l++) {
-//				coeff = a.getElement(l, i);
-//				for (j = i; j < size; j++) {
-//					value2 = a.getElement(l, j) - coeff * a.getElement(i, j);
-//					a.setElement(l, j, value2);
-//				}
-//			}
-
-//			coeff = temp *= coeff;
-//			a.setElement(i, i,  coeff);
-//			for (j = i; j < size; j++)
-//				a.setElement(i, j, a.getElement(i, j) / coeff);
-//			for (l = i + 1; l < size; l++) {
-//				coeff = a.getElement(l, i);
-//			for (j = i; j < size; j++)
-//					a.setElement(l, j, a.getElement(l, j) - coeff * a.getElement(i,j));
-//			}
-
-//			double value2 = 0;
-//			double value3 = 0;
-//			double value =  temp *= coeff;
-//			a.setElement(i,i,value);
-//			
-//			for (j = i; j < size; j++) {
-//				value2 = a.getElement(i, j) / coeff;
-//				a.setElement(i, j, value2);
-//			}
-//			for (l = i + 1; l < size; l++) {
-//				coeff = a.getElement(l, i);
-//				for (j = i; j < size; j++)
-//					value3 = a.getElement(l, j) - coeff * a.getElement(i,j);
-//					a.setElement(l, j, value3);
-//			}
-
-			
-			
-			
 			temp *= coeff = a.getElement(i, i);
 			for (j = i; j < size; j++)
 				a.setElement(i, j, a.getElement(i, j) / coeff);
@@ -90,7 +47,6 @@ public class DeterminatesDriver {
 				for (j = i; j < size; j++)
 					a.setElement(l, j, a.getElement(l, j) - coeff * a.getElement(i,j));
 			}
-		
 		}
 		return i < size ? 0.0 : temp;
 	}
