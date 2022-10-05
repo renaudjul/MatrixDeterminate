@@ -9,21 +9,25 @@
 
 import java.util.Scanner;
 
+
 public class Matrix {
 	// Fields
 	private int size;
 	private double[][]matrix;
 	
 	
-	
 
 	// Constructor that initializes an size x size matrix of all zeros
 		// it constructs a matrix object of dimension size x size
 	public void matrix(int size) {
+		if (size <= 0) 
+			throw new IndexOutOfBoundsException("size is out of bounds.");
+		
+		this.size = size;
 		this.matrix = new double[size][size];
+		
 	}
 
-	
 	
 	
 	// returns the Matrix's size
@@ -78,6 +82,7 @@ public class Matrix {
 			matrix[j][k] = temp;
 		}
 	}
+	
 }
 	
 	
